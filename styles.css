@@ -1,0 +1,46 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen body */
+html, body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #000000, #0d0d1a);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* Game container */
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Canvas */
+canvas {
+  background: black; /* JS draws stars and asteroids */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  width: 480px;
+  height: 640px;
+}
+
+/* Instructions below canvas */
+#instructions {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+#instructions p {
+  margin: 4px 0;
+}
